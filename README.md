@@ -99,3 +99,16 @@ cv2.destroyAllWindows()
 
 # Output:
 ![image](https://user-images.githubusercontent.com/72402606/104433325-fdc33a80-55af-11eb-80f8-c9b976511ff2.png)
+
+# 6)Develop a program to create an image from 2D array (create an
+array of random size and density values).
+import numpy
+from PIL import Image
+imarray = numpy.random.rand(512,1024,3) * 255
+imarray[0:512,0:1024] = [100,0,255]
+im = Image.fromarray(imarray,&#39;RGB&#39;)
+im.save(&#39;result_image.png&#39;)
+im.show()
+
+# Output:
+![image](https://user-images.githubusercontent.com/72402606/104433780-7d510980-55b0-11eb-8ee4-cbf70bd161d9.png)

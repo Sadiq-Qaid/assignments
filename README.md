@@ -13,8 +13,8 @@ cv2.destroyAllWindows()
 
 
 # 2) Develop a program to perform a linear transformation for an image
-(scaling &amp; rotation)
-a. Scaling:
+# (scaling &amp; rotation)
+# a. Scaling:
 import cv2 as c
 import numpy as np
 img= cv2.imread(&quot;app.jpg&quot;)

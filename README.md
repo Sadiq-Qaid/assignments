@@ -82,3 +82,20 @@ cv2.destroyAllWindows()
 
 # Output:
 ![image](https://user-images.githubusercontent.com/72402606/104432935-85f51000-55af-11eb-9dc9-979353ab15a7.png)
+
+# 5)Develop a program to convert the given colour image to different
+colour spaces.
+import cv2
+image = cv2.imread(&#39;cat.jpg&#39;)
+img_HLS = cv2.cvtColor(image,cv2.COLOR_BGR2HLS)
+img_HSV = cv2.cvtColor(image,cv2.cv2.COLOR_BGR2HSV)
+img_RGB = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
+cv2.imshow(&quot;original&quot;, image)
+cv2.imshow(&quot;HLS&quot;, img_HLS)
+cv2.imshow(&quot;HSV&quot;, img_HSV)
+cv2.imshow(&quot;RGB&quot;, img_RGB)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# Output:
+![image](https://user-images.githubusercontent.com/72402606/104433325-fdc33a80-55af-11eb-80f8-c9b976511ff2.png)

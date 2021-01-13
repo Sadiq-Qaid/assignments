@@ -70,3 +70,15 @@ cv2.waitKey(0)
 
 ![image](https://user-images.githubusercontent.com/72402606/104432338-f0598080-55ae-11eb-96cb-4a2d47f4a533.png)
 
+# 4)Develop a program to convert image into a binary (Black and
+white) colour.
+import cv2
+img = cv2.imread(&#39;cat.jpg&#39;,2)
+ret, bw_img = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
+cv2.imshow(&quot;Orignal_Image&quot;,img)
+cv2.imshow(&quot;Binary Image&quot;,bw_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+
+# Output:
+![image](https://user-images.githubusercontent.com/72402606/104432935-85f51000-55af-11eb-9dc9-979353ab15a7.png)

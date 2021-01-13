@@ -29,3 +29,18 @@ c.destroyAllWindows()
 
 # Output:
 ![image](https://user-images.githubusercontent.com/72402606/104431462-eb480180-55ad-11eb-9a2a-19989d09936a.png)
+
+# b. Rotation:
+import cv2 as c
+import numpy as np
+img= cv2.imread(&quot;app.jpg&quot;)
+h,w=img.shape[0:2]
+rotationMatrix=cv2.getRotationMatrix2D((w/2,h/2),90,.5)
+rotated_img=cv2.warpAffine(img,rotationMatrix,(w,h))
+c.imshow(&quot;Orignal_Image&quot;,img)
+c.imshow(&quot;rotation&quot;,rotated_img)
+c.waitKey(0)
+c.destroyAllWindows()
+
+# Output:
+![image](https://user-images.githubusercontent.com/72402606/104431835-5d204b00-55ae-11eb-8b4f-5539aa5ee0c0.png)
